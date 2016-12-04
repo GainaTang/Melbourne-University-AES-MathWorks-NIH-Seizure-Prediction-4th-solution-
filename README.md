@@ -1,8 +1,8 @@
-American Epilepsy Society Seizure Prediction Challenge
+Melbourne-University-AES-MathWorks-NIH-Seizure-Prediction Challenge
 -------------------------------
 **Description**
 
-The code was written for the [American Epilepsy Society Seizure Prediction Challenge](https://www.kaggle.com/c/seizure-prediction). The software is written in Python. The standard numpy, scipy, scikit-learn and matplotlib packages are used extensively.
+The code was written for the [Melbourne-University-AES-MathWorks-NIH-Seizure-Prediction Challenge](https://www.kaggle.com/c/melbourne-university-seizure-prediction). The software is written in Python. The standard numpy, scipy, scikit-learn and matplotlib packages are used extensively.
 
 **Dependency**
   * Python 2.7
