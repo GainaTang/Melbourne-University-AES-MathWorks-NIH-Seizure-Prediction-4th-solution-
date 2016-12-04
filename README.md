@@ -6,11 +6,11 @@ The code was written for the [Melbourne-University-AES-MathWorks-NIH-Seizure-Pre
 
 **Dependency**
   * Python 2.7
-  * scikit learn-0.14.1
-  * numpy-1.8.1
-  * pandas-0.14.0
+  * scikit learn
+  * numpy
+  * pandas
   * scipy
-  * hickle (plus h5py and hdf5, see https://github.com/telegraphic/hickle for installation details)
+  * hickle 
 
 **Hardware and Runtime**
 
