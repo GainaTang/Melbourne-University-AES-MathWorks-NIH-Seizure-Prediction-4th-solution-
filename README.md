@@ -13,10 +13,11 @@ The code was written for the [Melbourne-University-AES-MathWorks-NIH-Seizure-Pre
   * hickle 
 
 **AUC score on LeaderBoard**
-    public: 0.79650	
-    private: 0.79458
+    *public: 0.79650	
+    *private: 0.79458
 
 **How to Use the code**
-	Put the data in ./seizure-data directory, run predict.py
+Put the data in ./seizure-data directory, run predict.py
+
 **Licence**
     BSD 3-clause.
