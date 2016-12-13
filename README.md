@@ -1,31 +1,22 @@
-Melbourne-University-AES-MathWorks-NIH-Seizure-Prediction Challenge
--------------------------------
+Melbourne-University-AES-MathWorks-NIH-Seizure-Prediction Challenge -- 4th solution
+-----------------------------------------------------------------------------------
 **Description**
 
-The code was written for the [Melbourne-University-AES-MathWorks-NIH-Seizure-Prediction Challenge](https://www.kaggle.com/c/melbourne-university-seizure-prediction). The software is written in Python. The standard numpy, scipy, scikit-learn and matplotlib packages are used extensively.
-
+The code was written for the [Melbourne-University-AES-MathWorks-NIH-Seizure-Prediction Challenge](https://www.kaggle.com/c/melbourne-university-seizure-prediction). The software is written in Python.
 **Dependency**
   * Python 2.7
+  * graphlab
   * scikit learn
   * numpy
   * pandas
   * scipy
   * hickle 
 
-**Hardware and Runtime**
+**AUC score on LeaderBoard**
+    public: 0.79650	
+    private: 0.79458
 
-The computations were done in a desktop with intel i7 quad core CPU and 12GB RAM. The total computational time is about 2 hours when the classifier is set to use all the CPU threads.
-
-**How to Generate the Solution**
-	
-* Modify SETTINGS.json file and put the data in the data dir. Sample SETTINGS.json is given here
-```
-{
-  "competition-data-dir": "seizure-data",
-  "data-cache-dir": "data-cache",
-  "submission-dir": "submissions",
-  "figure-dir": "figure"
-}
-```
-* Run predict.py
-* Check the submission file in submissions directory and the analytical graphic PDF file in figure directory
+**How to Use the code**
+	Put the data in ./seizure-data directory, run predict.py
+**Licence**
+    BSD 3-clause.

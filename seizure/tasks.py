@@ -35,8 +35,7 @@ class Task(object):
 
 class Loadpreictal_FD_DFA_DataTask(Task):
     """
-    Load the preictal mat files 1 by 1, transform each 1-second segment through the pipeline
-    and return data in the format {'X': X, 'Y': y, 'latencies': latencies}
+    You can choose to enable DFA and FD features
     """
 
     def filename(self):
@@ -47,8 +46,7 @@ class Loadpreictal_FD_DFA_DataTask(Task):
                                 self.task_core.gen_preictal)
 class Loadinterictal_FD_DFA_DataTask(Task):
     """
-    Load the preictal mat files 1 by 1, transform each 1-second segment through the pipeline
-    and return data in the format {'X': X, 'Y': y, 'latencies': latencies}
+    You can choose to enable DFA and FD features
     """
 
     def filename(self):
@@ -60,8 +58,7 @@ class Loadinterictal_FD_DFA_DataTask(Task):
 
 class LoadTest_FD_DFA_DataTask(Task):
     """
-    Load the test mat files 1 by 1, transform each 1-second segment through the pipeline
-    and return data in the format {'X': X}
+    You can choose to enable DFA and FD features
     """
 
     def filename(self):
@@ -75,7 +72,6 @@ class LoadTest_FD_DFA_DataTask(Task):
 class LoadpreictalDataTask(Task):
     """
     Load the preictal mat files 1 by 1, transform each 1-second segment through the pipeline
-    and return data in the format {'X': X, 'Y': y, 'latencies': latencies}
     """
 
     def filename(self):
@@ -89,7 +85,6 @@ class LoadpreictalDataTask(Task):
 class LoadInterictalDataTask(Task):
     """
     Load the interictal mat files 1 by 1, transform each 1-second segment through the pipeline
-    and return data in the format {'X': X, 'Y': y}
     """
 
     def filename(self):
@@ -102,7 +97,6 @@ class LoadInterictalDataTask(Task):
 class LoadTestDataTask(Task):
     """
     Load the test mat files 1 by 1, transform each 1-second segment through the pipeline
-    and return data in the format {'X': X}
     """
 
     def filename(self):
@@ -426,8 +420,6 @@ def get_combine_prediction(preictal_segments):
     else:
         interictal_gmean = gmean(interictal)
         interictal_hmean = hmean(interictal)
-    interictal_agmean = 0.5 * (interictal_amean + interictal_gmean)
-    interictal_hgmean = 0.5 * (interictal_hmean + interictal_gmean)
     return 1.0 - interictal_hmean
 def stratified_group_kfold(y,group,K):
     testfold=np.zeros(y.shape[0])
